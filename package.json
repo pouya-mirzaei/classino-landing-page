@@ -1,0 +1,15 @@
+{
+    "name": "classino",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "watch:sass": "node-sass sass/main.scss css/styles.css -w"
+    },
+    "keywords": [],
+    "author": "pouya",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^9.0.0"
+    }
+}
