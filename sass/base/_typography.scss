@@ -1,0 +1,25 @@
+.txt {
+  display: inline-block;
+}
+
+.txt-big {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.txt-medium {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.txt-small {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.txt-white {
+  color: var(--color-white);
+}
+.txt-black {
+  color: var(--color-black);
+}

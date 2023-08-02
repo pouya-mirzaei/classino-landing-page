@@ -1,16 +1,85 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>کلاسینو | اولین و بزرگترین آموزشگاه آنلاین ابتدایی تا کنکور</title>
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
-    <body>
-        <svg class="s">
-            <use xlink:href="css/fontawesome/sprites/solid.svg#mug-hot"></use>
-        </svg>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>کلاسینو | اولین و بزرگترین آموزشگاه آنلاین ابتدایی تا کنکور</title>
+    <!-- fav icon -->
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" />
+    <!-- swiper js -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <!-- main styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="swiper slider">
+      <div class="swiper-wrapper">
+        <!-- slide 1 -->
+        <div class="swiper-slide">
+          <div class="slider__container">
+            <!-- slider bg image -->
+            <img src="images/swiper/landing/background.webp" class="slider-bg" alt="swiper image" />
 
-        <script src="https://kit.fontawesome.com/5527659fa3.js" crossorigin="anonymous"></script>
-    </body>
+            <!-- slider content -->
+            <div class="slider__container--content">
+              <div>
+                <span class="txt txt-big txt-white">رزور انتخاب رشته کنکور 1402 شروع شد</span>
+              </div>
+              <div>
+                <button class="btn btn-orange">توضیحات بیشتر</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- slide 2 -->
+        <div class="swiper-slide">
+          <div class="slider__container">
+            <!-- slider bg image -->
+            <div class="slider-gradient"></div>
+            <!-- slider content -->
+            <div class="slider__container--content">
+              <!-- right side -->
+              <div>
+                <span class="block">
+                  <span class="txt txt-medium txt-white">تخفیفات پلکانی ثبت نام کنکور ۱۴۰۳</span>
+                </span>
+                <span class="block timer-container u-margin-top-small">
+                  <span class="txt txt-small txt-white">مهلت تخفیف پکیج کامل</span>
+                  <div class="slider__timer">
+                    <svg>
+                      <use href="css/fontawesome/sprites/regular.svg#clock"></use>
+                    </svg>
+                    <div class="slider__timer--time">
+                      <span class="date days">01</span>
+                      <span>:</span>
+
+                      <span class="date hours">13</span>
+                      <span>:</span>
+
+                      <span class="date minites">34</span>
+                      <span>:</span>
+
+                      <span class="date seconds">56</span>
+                    </div>
+                  </div>
+                </span>
+              </div>
+              <!-- left side -->
+
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <header></header>
+
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

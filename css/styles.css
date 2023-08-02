@@ -1,60 +1,173 @@
-html {
-    --color-primary-1: #007bff;
-    --color-primary-2: #036af5;
-    --color-primary-2: #07a3fb;
-    --color-secondary-1: #ffaf20;
-    --color-secondary-2: #ffd843;
-    --color-red-primary: #eb3b5a;
-    --color-red-secondary: #eb3b5a;
-    --color-gray-2: #dfdfdf;
-    --color-light-1: #ebebeb;
-    --color-light-2: #f7f7f7;
-    --color-white: #fff;
-    --border-color-primary: var(--color-primary);
-    --border-color-secondary: var(--color-secondary-1);
-    --border-color-tertiary: #707070;
-    --txt-light-1: rgba(30, 30, 30, 0.49);
-    --txt-light-2: rgba(29, 29, 31, 0.69);
-    --txt-color-dark-1: #212529;
-    --txt-color-dark-2: #666464;
-    --border-radius-100: 10px;
-    --border-radius-160: 16px;
-    --border-radius-270: 27px;
-    --border-radius-340: 34px;
-}
+:root {
+  --color-primary-1: #007bff;
+  --color-primary-2: #036af5;
+  --color-primary-2: #07a3fb;
+  --color-secondary-1: #ffaf20;
+  --color-secondary-2: #ffd843;
+  --color-red-primary: #eb3b5a;
+  --color-red-secondary: #eb3b5a;
+  --color-gray-2: #dfdfdf;
+  --color-light-1: #ebebeb;
+  --color-light-2: #f7f7f7;
+  --color-white: #fff;
+  --color-black: #000;
+  --border-color-primary: var(--color-primary);
+  --border-color-secondary: var(--color-secondary-1);
+  --border-color-tertiary: #707070;
+  --txt-light-1: rgba(30, 30, 30, 0.49);
+  --txt-light-2: rgba(29, 29, 31, 0.69);
+  --txt-color-dark-1: #212529;
+  --txt-color-dark-2: #666464;
+  --border-radius-100: 10px;
+  --border-radius-160: 16px;
+  --border-radius-270: 27px;
+  --border-radius-340: 34px;
+  --border-radius-400: 40px; }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
 
 html {
-    font-size: 100%;
-}
+  font-size: 62.5%; }
 
 body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "iranSans", "Yekan"; }
+
+@font-face {
+  font-family: "Yekan";
+  src: local("B Yekan"), url("fonts/B_Yekan/B_Yeakn.ttf") format("ttf");
+  font-display: swap; }
+
+@font-face {
+  font-family: "iranSans";
+  src: local("Iran Sans"), url("fonts/iransans/iransans.ttf") format("ttf");
+  font-display: swap; }
+
+.txt {
+  display: inline-block; }
+
+.txt-big {
+  font-size: 24px;
+  font-weight: 900; }
+
+.txt-medium {
+  font-size: 18px;
+  font-weight: 900; }
+
+.txt-small {
+  font-size: 14px;
+  font-weight: 700; }
+
+.txt-white {
+  color: var(--color-white); }
+
+.txt-black {
+  color: var(--color-black); }
+
+.block {
+  display: block; }
+
+.u-margin-top-small {
+  margin-top: 1rem; }
+
+.u-margin-top-mediom {
+  margin-top: 4rem; }
+
+.u-margin-top-big {
+  margin-top: 6rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem; }
+
+.u-margin-bottom-mediom {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 6rem; }
+
+.slider {
+  width: 100%;
+  height: 10rem; }
+  .slider__container {
     width: 100%;
-    min-height: 100vh;
-    font-family: "iranSans", "Yekan";
-}
+    height: 100%;
+    position: relative; }
+    .slider__container--content {
+      position: absolute;
+      width: 100%;
+      height: 60%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+  .slider-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
+  .slider-gradient {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(var(--color-primary-2), var(--color-primary-1)); }
+  .slider__timer {
+    width: 200px;
+    height: 30px;
+    border-radius: var(--border-radius-270);
+    background-color: var(--color-secondary-1);
+    position: relative;
+    display: flex;
+    align-items: center; }
+    .slider__timer svg {
+      position: absolute;
+      right: 0.5rem;
+      width: 2.2rem;
+      height: 2.2rem;
+      font-weight: 700;
+      fill: var(--color-white); }
+    .slider__timer--time {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      font-size: 22px;
+      color: var(--color-white);
+      font-weight: 600; }
+      .slider__timer--time span {
+        margin-left: 0.6rem; }
 
-@font-face {
-    font-family: "Yekan";
-    src: local("B Yekan"), url("fonts/B_Yekan/B_Yeakn.ttf") format("ttf");
-    font-display: swap;
-}
+.swiper-button-next {
+  left: 5rem !important;
+  color: var(--color-white); }
 
-@font-face {
-    font-family: "iranSans";
-    src: local("Iran Sans"), url("fonts/iransans/iransans.ttf") format("ttf");
-    font-display: swap;
-}
+.swiper-button-prev {
+  right: 5rem !important;
+  color: var(--color-white); }
 
-.s {
-    fill: red;
-    width: 20px;
-    height: 20px;
-}
+.timer-container {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem; }
+
+.btn {
+  font-family: inherit;
+  padding: 1rem 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  border-radius: var(--border-radius-400);
+  transition: all 0.2; }
+  .btn-orange {
+    background-image: linear-gradient(180deg, var(--color-secondary-2), var(--color-secondary-1));
+    border: 3px solid var(--color-secondary-1); }
+  .btn:hover {
+    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2); }
