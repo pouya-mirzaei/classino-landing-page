@@ -24,6 +24,16 @@
   --border-radius-340: 34px;
   --border-radius-400: 40px; }
 
+@font-face {
+  font-family: "iranSans";
+  src: local("a Iranian Sans"), url("fonts/iransans//IraniSans.ttf"), format("ttf");
+  font-display: swap; }
+
+@font-face {
+  font-family: "Yekan";
+  src: local("B Yekan"), url("fonts/B_Yekan/B_Yeakn.ttf") format("ttf");
+  font-display: swap; }
+
 *,
 *::before,
 *::after {
@@ -38,16 +48,6 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: "iranSans", "Yekan"; }
-
-@font-face {
-  font-family: "Yekan";
-  src: local("B Yekan"), url("fonts/B_Yekan/B_Yeakn.ttf") format("ttf");
-  font-display: swap; }
-
-@font-face {
-  font-family: "iranSans";
-  src: local("Iran Sans"), url("fonts/iransans/iransans.ttf") format("ttf");
-  font-display: swap; }
 
 .txt {
   display: inline-block; }
