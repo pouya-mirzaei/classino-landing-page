@@ -1,12 +1,29 @@
 .btn {
   font-family: inherit;
-  padding: 1rem 3rem;
+  padding: 0.75rem 2.5rem;
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   border-radius: var(--border-radius-400);
-  transition: all 0.2;
+  transition: all 0.4;
+
+  &-primary {
+    background-color: var(--color-primary-1);
+    color: var(--color-white);
+
+    &-bg-white {
+      background-color: var(--color-white);
+      color: var(--color-primary-1);
+      border: 3px solid var(--color-primary-1);
+
+      &:hover {
+        background-color: var(--color-primary-1);
+        color: var(--color-white);
+      }
+    }
+  }
 
   &-orange {
     background-image: linear-gradient(180deg, var(--color-secondary-2), var(--color-secondary-1));
@@ -14,6 +31,6 @@
   }
 
   &:hover {
-    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   }
 }

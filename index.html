@@ -91,7 +91,45 @@
       <div class="swiper-button-prev"></div>
     </div>
 
-    <header></header>
+    <header class="header">
+      <div class="header__navigation">
+        <!-- logo -->
+        <div class="header__logo">
+          <a href="/"><img src="images/classinoLogo.08df55af.svg" alt="classino logo" /></a>
+        </div>
+
+        <!-- courses -->
+
+        <button class="btn btn-primary d-flex">
+          <span>دوره ها</span>
+          <svg>
+            <use href="css/fontawesome/sprites/solid.svg#angle-down"></use>
+          </svg>
+        </button>
+
+        <!-- search bar -->
+
+        <div class="header__search-bar">
+          <div class="target-svg">
+            <svg>
+              <use href="css/fontawesome/sprites/solid.svg#bullseye"></use>
+            </svg>
+          </div>
+
+          <input type="text" class="header__search-bar--input" placeholder="جست و جو دوره، پایه تحصیلی، استاد" />
+
+          <div class="search-svg">
+            <svg>
+              <use href="css/fontawesome/sprites/solid.svg#magnifying-glass"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__panel">
+        <button class="btn btn-primary btn-primary-bg-white">ورود به پنل کابری</button>
+      </div>
+    </header>
 
     <script src="assets/js/swiper.min.js"></script>
     <script src="js/script.js"></script>

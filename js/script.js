@@ -6,11 +6,9 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
   },
 
-  initialSlide: 1,
-
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
 });
