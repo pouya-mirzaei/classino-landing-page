@@ -14,9 +14,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
+
+      @include d-flex(center, space-around);
     }
   }
 
@@ -37,21 +36,15 @@
     border-radius: var(--border-radius-270);
     background-color: var(--color-secondary-1);
     position: relative;
-    display: flex;
-    align-items: center;
+    @include d-flex(center);
 
     svg {
       position: absolute;
       right: 0.5rem;
-      width: 2.2rem;
-      height: 2.2rem;
-      font-weight: 700;
-      fill: var(--color-white);
     }
 
     &--time {
-      display: flex;
-      align-items: center;
+      @include d-flex(center);
       flex-direction: row-reverse;
       position: absolute;
       left: 0;
@@ -64,6 +57,19 @@
         margin-left: 0.6rem;
       }
     }
+  }
+
+  &__pricing {
+    width: 27.5rem;
+    @include d-flex(center, space-between);
+
+    svg {
+      fill: var(--color-secondary-1);
+    }
+  }
+
+  &__price-badge {
+    font-size: 1rem;
   }
 }
 
@@ -78,7 +84,6 @@
 }
 
 .timer-container {
-  display: flex;
-  align-items: center;
+  @include d-flex(center);
   gap: 0 1rem;
 }
