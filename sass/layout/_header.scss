@@ -10,14 +10,36 @@
 
   @include d-flex(center, space-around);
 
+  @include responsive(large) {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 0 2rem;
+    height: 9.5rem;
+  }
+
+  // right side
+
   &__navigation {
     @include d-flex(center);
     gap: 1.5rem;
+
+    @include responsive(large) {
+      flex-direction: row-reverse;
+    }
   }
 
   &__search-bar {
     width: 40rem;
+
     @include d-flex(center);
+
+    @include responsive(xl) {
+      width: 34rem;
+    }
+
+    @include responsive(large) {
+      display: none;
+    }
 
     border-radius: var(--border-radius-340);
     background-color: var(--color-dark-1);
@@ -27,11 +49,16 @@
     }
 
     &--input {
+      width: 100%;
       padding: 0rem 2rem;
       padding-right: 0;
       font-family: inherit;
       font-size: 1.5rem;
       background-color: inherit;
+
+      &::placeholder {
+        color: var(--color-dark-2);
+      }
     }
 
     svg {
@@ -55,13 +82,104 @@
         fill: var(--color-white);
       }
     }
+  }
 
-    input {
+  // courses navigation
+
+  &__courses {
+    position: relative;
+  }
+
+  &__courses--has-sub {
+    @include responsive(large) {
+      display: none;
+    }
+  }
+
+  &__courses--has-sub:hover + &__menu {
+    display: flex;
+  }
+
+  &__menu {
+    border-radius: var(--border-radius-160);
+    position: absolute;
+    top: 120%;
+    width: 44rem;
+    background-color: var(--color-white);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+
+    @include d-flex(center, center);
+    display: none;
+
+    &:hover {
+      display: flex;
+    }
+  }
+
+  .sub-menu {
+    font-size: 1.7rem;
+    width: 100%;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      padding: 1rem 2rem;
       width: 100%;
 
-      &::placeholder {
-        color: var(--color-dark-2);
+      a {
+        font-weight: 500;
+        color: var(--txt-color-dark-1);
+        transition: all 0.2s;
+
+        &:hover {
+          color: var(--color-primary-1);
+        }
       }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      &:last-child {
+        button {
+          width: 100%;
+        }
+      }
+    }
+
+    &__title {
+      text-align: center;
+      font-weight: 800;
+      color: var(--color-primary-1);
+    }
+  }
+
+  // responsive
+
+  &__panel {
+    @include responsive(large) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include responsive(large) {
+      display: flex;
+    }
+
+    align-items: center;
+    gap: 0 2rem;
+
+    svg {
+      display: inline-block;
+      height: 3.5rem;
+      width: 3.5rem;
+      fill: var(--color-black);
     }
   }
 }

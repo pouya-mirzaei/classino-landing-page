@@ -8,14 +8,28 @@
 
 html {
   font-size: 62.5%;
+  @include responsive(xl) {
+    font-size: 55%;
+  }
+  @include responsive(large) {
+    font-size: 50%;
+  }
+  @include responsive(small) {
+    font-size: 35%;
+  }
+  @include responsive(big) {
+    font-size: 120%;
+  }
 }
 
 body {
   width: 100%;
   min-height: 100vh;
   font-family: "Dana";
-  height: 100rem;
+  height: 1000rem;
 }
+
+// simple reset
 
 svg {
   width: 2.2rem;
@@ -27,4 +41,16 @@ svg {
 input {
   border: none;
   outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: var(--color-dark-2);
 }

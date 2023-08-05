@@ -3,3 +3,28 @@
   align-items: $align-items;
   justify-content: $justify-content;
 }
+
+// responsive
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media (max-width: 55em) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
