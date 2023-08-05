@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- top slider -->
     <div class="swiper slider">
       <div class="swiper-wrapper">
         <!-- slide 1 -->
@@ -91,6 +92,7 @@
       <div class="swiper-button-prev"></div>
     </div>
 
+    <!-- header -->
     <header class="header">
       <div class="header__navigation">
         <!-- logo -->
@@ -131,11 +133,11 @@
 
           <input type="text" class="header__search-bar--input" placeholder="جست و جو دوره، پایه تحصیلی، استاد" />
 
-          <div class="search-svg">
+          <button class="search-svg">
             <svg>
               <use href="css/fontawesome/sprites/solid.svg#magnifying-glass"></use>
             </svg>
-          </div>
+          </button>
         </div>
       </div>
 
@@ -156,6 +158,32 @@
         </svg>
       </div>
     </header>
+
+    <!-- main -->
+    <main>
+      <section class="about-section">
+        <div class="about">
+          <!-- big screen photo -->
+          <div class="about__logo">
+            <img src="images/lcp.png" alt="lcp image" />
+          </div>
+          <div class="about__description">
+            <h1 class="heading-primary u-margin-bottom-mediom">
+              کلاسینو اولین و قوی‌ترین آموزشگاه آنلاین ابتدایی تا کنکور
+            </h1>
+            <!-- small screen photo -->
+            <div class="about__logo--mobile">
+              <img src="images/lcp.png" alt="lcp image" />
+            </div>
+
+            <h2 class="heading-secondary">
+              کلاسینو آموزشگاه آنلاینی هست که مجازی سرکلاس حاضر میشی، به صورت زنده با استاد حرف میزنی، تکالیف و آزمون ها
+              جدی پیگیری میشن و از هر جای دنیا میتونی به کلاسینو دسترسی پیدا کنی.
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="assets/js/swiper.min.js"></script>
     <script src="js/script.js"></script>

@@ -18,6 +18,11 @@
     }
   }
   @if $breakpoint == xl {
+    @media (max-width: 62.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == xxl {
     @media (max-width: 75em) {
       @content;
     }

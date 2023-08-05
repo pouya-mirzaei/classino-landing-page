@@ -1,0 +1,36 @@
+.about {
+  @include d-flex(center, center);
+  gap: 0 5rem;
+
+  @include responsive(xl) {
+    flex-direction: column;
+  }
+
+  &__logo {
+    @include responsive(xl) {
+      display: none;
+    }
+
+    &--mobile {
+      width: 100%;
+      display: none;
+
+      img {
+        width: 100%;
+        background-size: cover;
+      }
+
+      @include responsive(xl) {
+        display: block;
+      }
+    }
+  }
+
+  &__description {
+    width: 50%;
+
+    @include responsive(xl) {
+      width: 95%;
+    }
+  }
+}

@@ -4,11 +4,10 @@
   background-color: #fafafa;
   position: sticky;
   top: 0;
+  @include d-flex(center, space-around);
 
   // test
   box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
-
-  @include d-flex(center, space-around);
 
   @include responsive(large) {
     justify-content: space-between;
@@ -30,10 +29,13 @@
 
   &__search-bar {
     width: 40rem;
+    border-radius: var(--border-radius-340);
+    background-color: var(--color-dark-1);
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
 
     @include d-flex(center);
 
-    @include responsive(xl) {
+    @include responsive(xxl) {
       width: 34rem;
     }
 
@@ -41,9 +43,6 @@
       display: none;
     }
 
-    border-radius: var(--border-radius-340);
-    background-color: var(--color-dark-1);
-    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
     &:hover {
       background-color: var(--color-white);
     }
@@ -67,13 +66,12 @@
       @include d-flex(center, center);
     }
 
-    .target-svg {
-      svg {
-        padding: 0.5rem;
-        margin-left: 0.5rem;
-        fill: var(--color-dark-2);
-      }
+    .target-svg svg {
+      padding: 0.5rem;
+      margin-left: 0.5rem;
+      fill: var(--color-dark-2);
     }
+
     .search-svg {
       background-color: var(--color-primary-1);
       border-radius: 50%;

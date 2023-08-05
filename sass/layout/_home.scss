@@ -1,0 +1,9 @@
+.about-section {
+  width: 100%;
+  padding: 10rem;
+
+  @include responsive(small) {
+    margin-top: 10rem;
+    padding: 0;
+  }
+}

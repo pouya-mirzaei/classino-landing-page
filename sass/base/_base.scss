@@ -54,3 +54,9 @@ a:active {
   text-decoration: none;
   color: var(--color-dark-2);
 }
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

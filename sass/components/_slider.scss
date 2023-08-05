@@ -86,7 +86,7 @@
   left: 5rem !important;
   color: var(--color-white);
 
-  @include responsive(xl) {
+  @include responsive(xxl) {
     display: none;
   }
 }
@@ -95,7 +95,7 @@
   right: 5rem !important;
   color: var(--color-white);
 
-  @include responsive(xl) {
+  @include responsive(xxl) {
     display: none;
   }
 }
