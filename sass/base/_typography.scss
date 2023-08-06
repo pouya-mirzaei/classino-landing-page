@@ -1,5 +1,5 @@
 .heading-primary {
-  font-family: "Dana Demibold" !important;
+  font-family: "Dana Demibold";
   font-weight: 900;
   letter-spacing: 0;
   font-size: 4rem;
@@ -11,9 +11,16 @@
 }
 
 .heading-secondary {
+  font-family: "Dana Demibold";
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 7rem;
+}
+
+.paragraph {
   font-family: "Dana Medium";
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 5rem;
   letter-spacing: 0.1rem;
 

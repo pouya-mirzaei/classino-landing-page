@@ -26,7 +26,15 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: "Dana";
-  height: 1000rem;
+  height: 200rem;
+}
+
+main {
+  padding: 0 10rem;
+
+  @include responsive(large) {
+    padding: 0;
+  }
 }
 
 // simple reset

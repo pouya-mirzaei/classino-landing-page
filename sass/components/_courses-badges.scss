@@ -1,0 +1,27 @@
+.courses {
+  width: 80%;
+  @include d-flex(center, space-around);
+  flex-wrap: wrap;
+
+  @include responsive(xl) {
+    width: 100%;
+  }
+
+  &__sec {
+    cursor: pointer;
+    transition: all 0.3s;
+
+    @include responsive(large) {
+      width: 80%;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      width: 100%;
+      background-size: cover;
+    }
+  }
+}

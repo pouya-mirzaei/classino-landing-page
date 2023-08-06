@@ -1,9 +1,11 @@
 .about-section {
   width: 100%;
-  padding: 10rem;
+}
 
-  @include responsive(small) {
-    margin-top: 10rem;
-    padding: 0;
-  }
+.courses-section {
+  width: 100%;
+
+  @include d-flex(center, center);
+
+  flex-direction: column;
 }
