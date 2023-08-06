@@ -41,6 +41,9 @@
 .u-margin-top-big {
   margin-top: 8rem; }
 
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
 
@@ -49,6 +52,9 @@
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-huge {
+  margin-bottom: 10rem; }
 
 .lined {
   position: relative; }
@@ -157,13 +163,19 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: "Dana";
-  height: 200rem; }
+  height: 1000rem; }
 
 main {
   padding: 0 10rem; }
   @media (max-width: 55em) {
     main {
       padding: 0; } }
+
+.landing-slider {
+  margin: 0 auto;
+  aspect-ratio: 10 / 1;
+  width: 80%;
+  height: 20rem; }
 
 svg {
   width: 2.2rem;
@@ -195,6 +207,7 @@ button {
   height: 7.5rem;
   background-color: #fafafa;
   position: sticky;
+  z-index: 1000;
   top: 0;
   display: flex;
   align-items: center;
@@ -325,8 +338,9 @@ button {
   flex-direction: column; }
 
 .slider {
-  width: 100%;
-  height: 10rem; }
+  width: 100%; }
+  .slider-top {
+    height: 10rem; }
   @media (max-width: 55em) {
     .slider {
       height: 15rem; } }
@@ -392,6 +406,11 @@ button {
     font-size: 1rem; }
 
 .swiper-button-next {
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.5);
   left: 5rem !important;
   color: var(--color-white); }
   @media (max-width: 75em) {
@@ -399,6 +418,11 @@ button {
       display: none; } }
 
 .swiper-button-prev {
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.5);
   right: 5rem !important;
   color: var(--color-white); }
   @media (max-width: 75em) {
@@ -467,10 +491,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  gap: 0 3rem; }
   @media (max-width: 62.5em) {
     .courses {
-      width: 100%; } }
+      width: 100%;
+      gap: 4rem 0; } }
   .courses__sec {
     cursor: pointer;
     transition: all 0.3s; }

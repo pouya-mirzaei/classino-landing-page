@@ -26,7 +26,7 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: "Dana";
-  height: 200rem;
+  height: 1000rem;
 }
 
 main {
@@ -35,6 +35,13 @@ main {
   @include responsive(large) {
     padding: 0;
   }
+}
+
+.landing-slider {
+  margin: 0 auto;
+  aspect-ratio: 10 / 1;
+  width: 80%;
+  height: 20rem;
 }
 
 // simple reset

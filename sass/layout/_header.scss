@@ -3,6 +3,7 @@
   height: 7.5rem;
   background-color: #fafafa;
   position: sticky;
+  z-index: 1000;
   top: 0;
   @include d-flex(center, space-around);
 

@@ -2,9 +2,12 @@
   width: 80%;
   @include d-flex(center, space-around);
   flex-wrap: wrap;
+  gap: 0 3rem;
 
   @include responsive(xl) {
     width: 100%;
+
+    gap: 4rem 0;
   }
 
   &__sec {
