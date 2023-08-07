@@ -36,11 +36,11 @@ const professors = new Swiper(".professors", {
     nextEl: ".swiper-button-next",
   },
 
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
 
   slidesPerView: 1,
   spaceBetween: 40,
