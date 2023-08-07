@@ -9,3 +9,14 @@
 
   flex-direction: column;
 }
+
+.professors-section {
+  @include d-flex(center, center);
+  gap: 2rem 0;
+
+  flex-direction: column;
+
+  .professors {
+    width: 100%;
+  }
+}

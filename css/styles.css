@@ -337,6 +337,15 @@ button {
   justify-content: center;
   flex-direction: column; }
 
+.professors-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem 0;
+  flex-direction: column; }
+  .professors-section .professors {
+    width: 100%; }
+
 .slider {
   width: 100%; }
   .slider-top {
@@ -405,7 +414,7 @@ button {
   .slider__price-badge {
     font-size: 1rem; }
 
-.swiper-button-next {
+.swiper-button-next--top {
   width: 6rem;
   height: 6rem;
   text-align: center;
@@ -414,10 +423,10 @@ button {
   left: 5rem !important;
   color: var(--color-white); }
   @media (max-width: 75em) {
-    .swiper-button-next {
+    .swiper-button-next--top {
       display: none; } }
 
-.swiper-button-prev {
+.swiper-button-prev--top {
   width: 6rem;
   height: 6rem;
   text-align: center;
@@ -426,7 +435,7 @@ button {
   right: 5rem !important;
   color: var(--color-white); }
   @media (max-width: 75em) {
-    .swiper-button-prev {
+    .swiper-button-prev--top {
       display: none; } }
 
 .timer-container {
@@ -508,3 +517,39 @@ button {
     .courses__sec img {
       width: 100%;
       background-size: cover; }
+
+.professor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  border-radius: var(--border-radius-160);
+  overflow: hidden;
+  height: 27.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  z-index: 10; }
+  .professor:hover {
+    box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.4); }
+  .professor__image {
+    position: absolute;
+    bottom: 0;
+    background-size: cover;
+    width: 100%; }
+  .professor__info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: var(--color-white);
+    padding: 1rem;
+    z-index: 20;
+    background-image: linear-gradient(rgba(28, 28, 33, 0), #1c1c21); }
+  .professor__name {
+    font-weight: 800;
+    font-size: 2rem; }
+  .professor__roll {
+    font-weight: 600;
+    color: lightgray;
+    font-size: 1.5rem; }
