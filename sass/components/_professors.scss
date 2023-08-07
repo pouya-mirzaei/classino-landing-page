@@ -3,7 +3,8 @@
   background: #eee;
   border-radius: var(--border-radius-160);
   overflow: hidden;
-  height: 27.5rem;
+  padding-top: 4rem;
+
   cursor: pointer;
   transition: all 0.2s;
 
@@ -14,7 +15,6 @@
   }
 
   &__image {
-    position: absolute;
     bottom: 0;
     background-size: cover;
     width: 100%;
@@ -25,6 +25,14 @@
     bottom: 0;
     right: 0;
     left: 0;
+    height: 35%;
+    @include d-flex(center, space-around);
+
+    @include responsive(small) {
+      justify-content: center;
+    }
+
+    flex-direction: column;
     color: var(--color-white);
 
     padding: 1rem;
@@ -35,11 +43,18 @@
 
   &__name {
     font-weight: 800;
-    font-size: 2rem;
+    font-size: 20px;
+
+    @include responsive(small) {
+      font-size: 25px;
+    }
   }
   &__roll {
     font-weight: 600;
     color: lightgray;
-    font-size: 1.5rem;
+    font-size: 15px;
+    @include responsive(small) {
+      font-size: 20px;
+    }
   }
 }

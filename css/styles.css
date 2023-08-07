@@ -166,7 +166,7 @@ body {
   height: 1000rem; }
 
 main {
-  padding: 0 10rem; }
+  padding: 0 10rem !important; }
   @media (max-width: 55em) {
     main {
       padding: 0; } }
@@ -525,7 +525,7 @@ button {
   background: #eee;
   border-radius: var(--border-radius-160);
   overflow: hidden;
-  height: 27.5rem;
+  padding-top: 4rem;
   cursor: pointer;
   transition: all 0.2s;
   position: relative;
@@ -533,7 +533,6 @@ button {
   .professor:hover {
     box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.4); }
   .professor__image {
-    position: absolute;
     bottom: 0;
     background-size: cover;
     width: 100%; }
@@ -542,14 +541,28 @@ button {
     bottom: 0;
     right: 0;
     left: 0;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     color: var(--color-white);
     padding: 1rem;
     z-index: 20;
     background-image: linear-gradient(rgba(28, 28, 33, 0), #1c1c21); }
+    @media (max-width: 37.5em) {
+      .professor__info {
+        justify-content: center; } }
   .professor__name {
     font-weight: 800;
-    font-size: 2rem; }
+    font-size: 20px; }
+    @media (max-width: 37.5em) {
+      .professor__name {
+        font-size: 25px; } }
   .professor__roll {
     font-weight: 600;
     color: lightgray;
-    font-size: 1.5rem; }
+    font-size: 15px; }
+    @media (max-width: 37.5em) {
+      .professor__roll {
+        font-size: 20px; } }

@@ -36,16 +36,30 @@ const professors = new Swiper(".professors", {
     nextEl: ".swiper-button-next",
   },
 
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  //   disableOnInteraction: false,
+  //   pauseOnMouseEnter: true,
+  // },
 
-  slidesPerView: 5,
+  slidesPerView: 1,
   spaceBetween: 40,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+
+  breakpoints: {
+    1175: {
+      slidesPerView: 5,
+    },
+
+    881: {
+      slidesPerView: 3,
+    },
+
+    601: {
+      slidesPerView: 2,
+    },
   },
 });
