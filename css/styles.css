@@ -166,7 +166,7 @@ body {
   height: 1000rem; }
 
 main {
-  padding: 0 10rem !important; }
+  padding: 0 10rem; }
   @media (max-width: 55em) {
     main {
       padding: 0; } }
@@ -453,6 +453,13 @@ button {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius-400);
   transition: all 0.4; }
+  .btn-secondary {
+    background-image: linear-gradient(180deg, var(--color-secondary-2), var(--color-secondary-1));
+    border: 3px solid var(--color-secondary-1); }
+  .btn:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn-white {
+    color: var(--color-white); }
   .btn-primary {
     background-color: var(--color-primary-1);
     color: var(--color-white); }
@@ -463,11 +470,6 @@ button {
       .btn-primary-bg-white:hover {
         background-color: var(--color-primary-1);
         color: var(--color-white); }
-  .btn-orange {
-    background-image: linear-gradient(180deg, var(--color-secondary-2), var(--color-secondary-1));
-    border: 3px solid var(--color-secondary-1); }
-  .btn:hover {
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .about {
   display: flex;
