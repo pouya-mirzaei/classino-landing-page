@@ -166,7 +166,7 @@ body {
   height: 1000rem; }
 
 main {
-  padding: 0 10rem; }
+  padding: 0 10rem !important; }
   @media (max-width: 55em) {
     main {
       padding: 0; } }

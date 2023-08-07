@@ -30,7 +30,7 @@ body {
 }
 
 main {
-  padding: 0 10rem;
+  padding: 0 10rem !important;
 
   @include responsive(large) {
     padding: 0;
