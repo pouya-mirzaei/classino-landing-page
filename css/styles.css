@@ -599,7 +599,7 @@ button {
   width: 90%;
   margin: 0 auto; }
   .top-ratings__wrapper > * {
-    height: 32.5rem;
+    height: 325px;
     overflow: hidden;
     border-radius: var(--border-radius-160); }
   .top-ratings__student {

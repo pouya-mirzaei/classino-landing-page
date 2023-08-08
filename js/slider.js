@@ -62,7 +62,7 @@ const professors = new Swiper(".professors", {
 
 const topRatings = new Swiper(".top-ratings", {
   autoplay: {
-    delay: 1000,
+    delay: 2000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
     stopOnLastSlide: true,
