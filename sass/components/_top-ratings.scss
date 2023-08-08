@@ -45,6 +45,9 @@
 
     &__buttons {
       gap: 1rem 0;
+      & > * {
+        width: 85%;
+      }
     }
   }
 }

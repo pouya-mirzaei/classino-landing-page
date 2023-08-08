@@ -97,7 +97,12 @@
 
   left: 5rem !important;
   color: var(--color-white);
+}
 
+.swiper-button-next--top,
+.swiper-button-prev--top,
+.swiper-button-prev,
+.swiper-button-next {
   @include responsive(xxl) {
     display: none;
   }
@@ -112,25 +117,9 @@
 
   right: 5rem !important;
   color: var(--color-white);
-
-  @include responsive(xxl) {
-    display: none;
-  }
 }
 
 .timer-container {
   @include d-flex(center);
   gap: 0 1rem;
-}
-// landing slider
-.landing-slider {
-  padding: 5rem 10rem;
-  padding-top: 0;
-
-  @include responsive(small) {
-    padding: 5rem 2rem;
-    padding-top: 0;
-  }
-
-  height: max-content;
 }

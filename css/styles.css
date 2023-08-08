@@ -157,6 +157,9 @@ html {
   @media (max-width: 55em) {
     html {
       font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 45%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 120%; } }
@@ -251,7 +254,7 @@ button {
     .header__search-bar .target-svg svg {
       padding: 0.5rem;
       margin-left: 0.5rem;
-      fill: var(--color-dark-2); }
+      fill: var(--color-light-2); }
     .header__search-bar .search-svg {
       background-color: var(--color-primary-1);
       border-radius: 50%; }
@@ -466,9 +469,13 @@ button {
   background-color: rgba(128, 128, 128, 0.5);
   left: 5rem !important;
   color: var(--color-white); }
-  @media (max-width: 75em) {
-    .swiper-button-next--top {
-      display: none; } }
+
+@media (max-width: 75em) {
+  .swiper-button-next--top,
+  .swiper-button-prev--top,
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none; } }
 
 .swiper-button-prev--top {
   width: 6rem;
@@ -478,24 +485,12 @@ button {
   background-color: rgba(128, 128, 128, 0.5);
   right: 5rem !important;
   color: var(--color-white); }
-  @media (max-width: 75em) {
-    .swiper-button-prev--top {
-      display: none; } }
 
 .timer-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0 1rem; }
-
-.landing-slider {
-  padding: 5rem 10rem;
-  padding-top: 0;
-  height: max-content; }
-  @media (max-width: 37.5em) {
-    .landing-slider {
-      padding: 5rem 2rem;
-      padding-top: 0; } }
 
 .btn {
   font-family: inherit;
@@ -662,6 +657,8 @@ button {
         height: 6.4rem; }
     .top-ratings .sign-up__buttons {
       gap: 1rem 0; }
+      .top-ratings .sign-up__buttons > * {
+        width: 85%; }
 
 .social {
   display: flex;
