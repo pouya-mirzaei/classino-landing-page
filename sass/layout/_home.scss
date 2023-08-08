@@ -1,18 +1,29 @@
 .about-section {
   width: 100%;
+  padding: 5rem 10rem;
+
+  @include responsive(small) {
+    padding: 5rem 0;
+  }
 }
 
 .courses-section {
   width: 100%;
-
   @include d-flex(center, center);
-
   flex-direction: column;
+
+  padding: 5rem 10rem;
+
+  @include responsive(small) {
+    padding: 5rem 0;
+  }
 }
 
 .professors-section {
   @include d-flex(center, center);
   gap: 2rem 0;
+
+  padding: 5rem 10rem;
 
   flex-direction: column;
 

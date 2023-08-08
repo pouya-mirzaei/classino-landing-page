@@ -29,19 +29,16 @@ body {
   height: 1000rem;
 }
 
-main {
-  padding: 0 10rem !important;
-
-  @include responsive(large) {
-    padding: 0;
-  }
-}
-
 .landing-slider {
-  margin: 0 auto;
-  aspect-ratio: 10 / 1;
-  width: 80%;
-  height: 20rem;
+  padding: 5rem 10rem;
+  padding-top: 0;
+
+  @include responsive(small) {
+    padding: 5rem 2rem;
+    padding-top: 0;
+  }
+
+  height: max-content;
 }
 
 // simple reset

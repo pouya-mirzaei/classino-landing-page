@@ -11,7 +11,9 @@
   }
 
   &__sec {
+    overflow: hidden;
     cursor: pointer;
+    border-radius: var(--border-radius-160);
     transition: all 0.3s;
 
     @include responsive(large) {
