@@ -1,0 +1,30 @@
+.social {
+  @include d-flex(center, center);
+  gap: 0 1rem;
+  flex-wrap: wrap;
+
+  &__box {
+    flex: 0 0 180px;
+    padding: 2rem;
+    @include d-flex(center, center);
+    flex-direction: column;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__logo {
+    width: 80%;
+    filter: grayscale(100%);
+    transition: all 0.2s;
+  }
+
+  &__name {
+    font-size: 2rem;
+  }
+
+  &__box:hover &__logo {
+    filter: grayscale(0);
+  }
+}

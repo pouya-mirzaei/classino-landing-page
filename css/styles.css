@@ -361,6 +361,10 @@ button {
     justify-content: center;
     flex-direction: column; }
 
+.social-section {
+  width: 100%;
+  padding: 5rem 10rem; }
+
 .slider {
   width: 100%; }
   .slider-top {
@@ -626,3 +630,28 @@ button {
         height: 6.4rem; }
     .top-ratings .sign-up__buttons {
       gap: 1rem 0; }
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1rem;
+  flex-wrap: wrap; }
+  .social__box {
+    flex: 0 0 180px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.2s; }
+    .social__box:hover {
+      transform: scale(1.1); }
+  .social__logo {
+    width: 80%;
+    filter: grayscale(100%);
+    transition: all 0.2s; }
+  .social__name {
+    font-size: 2rem; }
+  .social__box:hover .social__logo {
+    filter: grayscale(0); }
