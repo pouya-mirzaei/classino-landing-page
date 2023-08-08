@@ -41,3 +41,13 @@
     }
   }
 }
+
+.navigation-link {
+  color: var(--txt-color-dark-1) !important;
+  font-size: 1.75rem;
+  transition: all 0.2s;
+
+  &:hover {
+    color: var(--color-secondary-1) !important;
+  }
+}

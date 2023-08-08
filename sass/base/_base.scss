@@ -14,9 +14,6 @@ html {
   @include responsive(large) {
     font-size: 50%;
   }
-  @include responsive(small) {
-    font-size: 35%;
-  }
   @include responsive(big) {
     font-size: 120%;
   }
@@ -26,7 +23,6 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: "Dana";
-  height: 1000rem;
 }
 
 // simple reset
@@ -53,6 +49,7 @@ a:focus,
 a:active {
   text-decoration: none;
   color: var(--color-dark-2);
+  font-size: 2rem;
 }
 
 button {

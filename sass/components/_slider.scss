@@ -8,6 +8,10 @@
     height: 15rem;
   }
 
+  @include responsive(small) {
+    display: none;
+  }
+
   &__container {
     width: 100%;
     height: 100%;

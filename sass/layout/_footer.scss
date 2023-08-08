@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+
+  .links {
+    padding: 5rem 10rem;
+    @include d-flex(center, space-around);
+
+    @include responsive(large) {
+      padding: 5rem 0;
+    }
+
+    &__group {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem 0;
+    }
+  }
+
+  .copyright {
+    width: 100%;
+    background-color: var(--color-gray-2);
+    padding: 2rem 1rem;
+    font-size: 1.75rem;
+
+    @include d-flex(center, center);
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .version {
+    font-family: sans-serif;
+    color: var(--color-light-2);
+  }
+}
