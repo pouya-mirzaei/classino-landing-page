@@ -118,3 +118,15 @@
   @include d-flex(center);
   gap: 0 1rem;
 }
+// landing slider
+.landing-slider {
+  padding: 5rem 10rem;
+  padding-top: 0;
+
+  @include responsive(small) {
+    padding: 5rem 2rem;
+    padding-top: 0;
+  }
+
+  height: max-content;
+}

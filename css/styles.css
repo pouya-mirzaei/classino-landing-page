@@ -90,21 +90,26 @@
   src: local("B Yekan"), url("fonts/B_Yekan/B_Yekan.ttf") format("ttf");
   font-display: swap; }
 
-.heading-primary {
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
   font-family: "Dana Demibold";
   font-weight: 900;
-  letter-spacing: 0;
-  font-size: 4rem;
   line-height: 7rem; }
+
+.heading-primary {
+  letter-spacing: 0;
+  font-size: 4rem; }
   @media (max-width: 62.5em) {
     .heading-primary {
       text-align: center; } }
 
 .heading-secondary {
-  font-family: "Dana Demibold";
-  font-weight: 900;
   font-size: 3.5rem;
-  line-height: 7rem; }
+  background-color: transparent; }
+
+.heading-tertiary {
+  font-size: 3rem; }
 
 .paragraph {
   font-family: "Dana Medium";
@@ -137,6 +142,9 @@
 .txt-black {
   color: var(--color-black); }
 
+.txt-secondary-2 {
+  color: var(--color-secondary-2); }
+
 *,
 *::before,
 *::after {
@@ -164,15 +172,6 @@ body {
   min-height: 100vh;
   font-family: "Dana";
   height: 1000rem; }
-
-.landing-slider {
-  padding: 5rem 10rem;
-  padding-top: 0;
-  height: max-content; }
-  @media (max-width: 37.5em) {
-    .landing-slider {
-      padding: 5rem 2rem;
-      padding-top: 0; } }
 
 svg {
   width: 2.2rem;
@@ -352,6 +351,16 @@ button {
   .professors-section .professors {
     width: 100%; }
 
+.top-ratings-section {
+  width: 100%;
+  padding: 5rem 10rem;
+  background-image: linear-gradient(to right, var(--color-primary-1), var(--color-primary-2)); }
+  .top-ratings-section .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+
 .slider {
   width: 100%; }
   .slider-top {
@@ -449,6 +458,15 @@ button {
   align-items: center;
   justify-content: flex-start;
   gap: 0 1rem; }
+
+.landing-slider {
+  padding: 5rem 10rem;
+  padding-top: 0;
+  height: max-content; }
+  @media (max-width: 37.5em) {
+    .landing-slider {
+      padding: 5rem 2rem;
+      padding-top: 0; } }
 
 .btn {
   font-family: inherit;
@@ -576,3 +594,35 @@ button {
     @media (max-width: 37.5em) {
       .professor__roll {
         font-size: 20px; } }
+
+.top-ratings {
+  width: 90%;
+  margin: 0 auto; }
+  .top-ratings__wrapper > * {
+    height: 32.5rem;
+    overflow: hidden;
+    border-radius: var(--border-radius-160); }
+  .top-ratings__student {
+    background-color: orangered; }
+  .top-ratings .sign-up {
+    background-image: linear-gradient(var(--color-secondary-2), var(--color-secondary-1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 0;
+    flex-direction: column; }
+    .top-ratings .sign-up__title, .top-ratings .sign-up__buttons {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+    .top-ratings .sign-up__title {
+      gap: 2rem 0; }
+      .top-ratings .sign-up__title h3 {
+        font-size: 2.5rem; }
+      .top-ratings .sign-up__title svg {
+        width: 8rem;
+        height: 6.4rem; }
+    .top-ratings .sign-up__buttons {
+      gap: 1rem 0; }

@@ -306,7 +306,6 @@
   content: "next";
 }
 .swiper-pagination {
-  position: absolute;
   text-align: center;
   transition: 0.3s opacity;
   transform: translate3d(0, 0, 0);
@@ -378,7 +377,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  background-color: white;
 }
 .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical > .swiper-pagination-bullets {

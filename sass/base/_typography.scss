@@ -1,19 +1,26 @@
-.heading-primary {
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
   font-family: "Dana Demibold";
   font-weight: 900;
+  line-height: 7rem;
+}
+
+.heading-primary {
   letter-spacing: 0;
   font-size: 4rem;
-  line-height: 7rem;
   @include responsive(xl) {
     text-align: center;
   }
 }
 
 .heading-secondary {
-  font-family: "Dana Demibold";
-  font-weight: 900;
   font-size: 3.5rem;
-  line-height: 7rem;
+  background-color: transparent;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
 }
 
 .paragraph {
@@ -52,4 +59,8 @@
 }
 .txt-black {
   color: var(--color-black);
+}
+
+.txt-secondary-2 {
+  color: var(--color-secondary-2);
 }

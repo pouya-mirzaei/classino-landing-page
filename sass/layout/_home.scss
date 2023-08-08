@@ -31,3 +31,14 @@
     width: 100%;
   }
 }
+
+.top-ratings-section {
+  width: 100%;
+  padding: 5rem 10rem;
+  background-image: linear-gradient(to right, var(--color-primary-1), var(--color-primary-2));
+
+  .row {
+    @include d-flex(center, center);
+    flex-direction: column;
+  }
+}

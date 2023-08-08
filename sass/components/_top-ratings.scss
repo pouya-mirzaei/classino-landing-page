@@ -1,0 +1,50 @@
+.top-ratings {
+  width: 90%;
+  margin: 0 auto;
+
+  &__wrapper > * {
+    height: 32.5rem;
+    overflow: hidden;
+    border-radius: var(--border-radius-160);
+  }
+
+  // students
+
+  &__student {
+    background-color: orangered;
+  }
+  // sign up
+
+  .sign-up {
+    background-image: linear-gradient(var(--color-secondary-2), var(--color-secondary-1));
+
+    @include d-flex(center, center);
+    gap: 1rem 0;
+
+    flex-direction: column;
+
+    &__title,
+    &__buttons {
+      width: 100%;
+      @include d-flex(center, center);
+      flex-direction: column;
+    }
+
+    &__title {
+      gap: 2rem 0;
+
+      h3 {
+        font-size: 2.5rem;
+      }
+
+      svg {
+        width: 8rem;
+        height: 6.4rem;
+      }
+    }
+
+    &__buttons {
+      gap: 1rem 0;
+    }
+  }
+}

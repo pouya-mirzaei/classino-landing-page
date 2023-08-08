@@ -29,18 +29,6 @@ body {
   height: 1000rem;
 }
 
-.landing-slider {
-  padding: 5rem 10rem;
-  padding-top: 0;
-
-  @include responsive(small) {
-    padding: 5rem 2rem;
-    padding-top: 0;
-  }
-
-  height: max-content;
-}
-
 // simple reset
 
 svg {
