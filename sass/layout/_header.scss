@@ -31,7 +31,7 @@
   &__search-bar {
     width: 40rem;
     border-radius: var(--border-radius-340);
-    background-color: var(--color-dark-1);
+    background-color: var(--color-light-1);
     box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
 
     @include d-flex(center);
